@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en" xmlns="http://www.w3.org/1999/xhtml"
+	xmlns:th="http://www.thymeleaf.org" data-layout-decorate="~{fragments/login-layout}">
+<head>
+    <title>Batch Management – Login</title>
+    
+<script type="text/javascript" th:src="@{/js/jquery-min.js}"></script>
+<script type="text/javascript" th:src="@{/js/jquery.js}"></script>
+<link th:href="@{/css/style.css}" type="text/css" rel="stylesheet">
+</head>
+
+<body>
+<div class="right_col" role="main" data-layout-fragment="content">
+    <div class="">
+            <div align="center"><br>
+               <i class="fa fa-home"></i> &nbsp;
+               <i class="fa fa-edit"></i> &nbsp;
+               <i class="fa fa-desktop"></i> &nbsp;
+               <i class="fa fa-table"></i> &nbsp;
+               <i class="fa fa-clone"></i> &nbsp;
+               <i class="fa fa-bar-chart-o"></i> 
+               
+               <h3 style="color:white">Batch Management</h3>
+                
+            </div>
+	
+        <div class="clearfix"></div>
+
+        <div class="row">
+            <div class="col-md-12 col-sm-12 col-xs-12">
+                <div class="x_panel">
+                    <div class="x_title">
+                        <h2></h2>
+                        <ul class="nav navbar-right panel_toolbox">
+                            <li><a class="collapse-link"><i class="fa fa-chevron-up"></i></a>
+                            </li>
+                            
+                            <li><a class="close-link"><i class="fa fa-close"></i></a>
+                            </li>
+                        </ul>
+                        <div class="clearfix"></div>
+                    </div>
+                    <div class="x_content">
+                        <div align="center">
+			<form id="login_form" action="/home" th:action="@{/login}" th:object="${user}" method="post">
+
+				<label>User Name:</label><br/>
+				<input Id ="txtUserName" type="text" th:field="*{userName}" /><br/>
+				
+				<label>Password:</label><br/>
+				<input Id ="txtPassword" type="password" th:field="*{password}" /><br/>
+				
+				<button Id = "btnSignin" type="submit" > Login</button><br><br>
+				<div id="errorMsg" style="color:red" class="a" th:text="*{error}"></div>
+			</form>
+		</div>
+	</div>	</div></div></div></div>
+</div>
+</body>
+</html>

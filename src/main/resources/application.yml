@@ -1,0 +1,39 @@
+
+spring:
+  datasource:
+    url: jdbc:mysql://localhost:3306/batch_management?createDatabaseIfNotExist=true&useSSL=false&serverTimezone=America/New_York
+    username: root
+    password: mysql
+    initialization-mode : always
+  jpa:
+    database: MYSQL
+    show-sql: true
+    hibernate:
+      ddl-auto: none
+    generate-ddl : false
+  flyway:
+   url: jdbc:mysql://localhost:3306/mysql
+   schemas: batch_management
+   user: "root"
+   password: "mysql"    
+  main:
+    allow-bean-definition-overriding: true
+logging:
+  level:
+    org.springframework: INFO
+    org.springframework.web.filter.CommonsRequestLoggingFilter: DEBUG
+    org.hibernate: INFO
+    com.tservice.providermanagement.v1: DEBUG
+    
+#server:
+#  servlet:
+#    session:
+#        cookie:
+#           http-only: true
+#           secure: true
+session:
+  enable:
+    url:
+      with:
+        session:
+          id: false    

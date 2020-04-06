@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en" xmlns="http://www.w3.org/1999/xhtml"
+	xmlns:th="http://www.thymeleaf.org">
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    <!-- Meta, title, CSS, favicons, etc. -->
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <!-- <title data-layout-title-pattern="$LAYOUT_TITLE | $CONTENT_TITLE">Service Ticket Router!</title> -->
+
+    <!-- Bootstrap -->
+    <link th:href="@{/webjars/bootstrap/css/bootstrap.min.css}" rel="stylesheet">
+    <!-- Font Awesome -->
+    <link th:href="@{/webjars/font-awesome/css/font-awesome.min.css}" rel="stylesheet">
+    <!-- NProgress -->
+    <link th:href="@{/webjars/nprogress/nprogress.css}" rel="stylesheet">
+
+    <!-- Custom Theme Style -->
+	<link th:href="@{/css/custom.min.css}" type="text/css" rel="stylesheet">
+	<link th:href="@{/css/style.css}" type="text/css" rel="stylesheet">
+    
+</head>
+
+<body >
+<div class="container">
+               
+        <!-- page content -->
+        <div data-layout-fragment="content"></div>
+        <!-- /page content -->
+        <div align="center">
+       Batch Management By SUN'S SOFTWARE
+       </div>
+    <div class="clearfix"></div>
+</div>
+
+<!-- jQuery -->
+<script th:src="@{/webjars/jquery/jquery.min.js}"></script>
+<!-- Bootstrap -->
+<script th:src="@{/webjars/bootstrap/js/bootstrap.min.js}"></script>
+<!-- FastClick -->
+<script th:src="@{/webjars/fastclick/fastclick.js}"></script>
+<!-- NProgress -->
+<script th:src="@{/webjars/nprogress/nprogress.js}"></script>
+
+<!-- Custom Theme Scripts -->
+<script th:src="@{/js/custom.min.js}"></script>
+</body>
+</html>

@@ -1,0 +1,26 @@
+<html xmlns="http://www.w3.org/1999/xhtml"
+    xmlns:th="http://www.thymeleaf.org"
+    xmlns:sec="http://www.thymeleaf.org"> 
+<head>
+<link th:href="@{/css/style.css}" type="text/css" rel="stylesheet"></link>
+</head>    
+<body>
+<div class="topnav" th:fragment="head">
+   <a th:href="@{/home}">Home</a>&nbsp;
+   <a th:href="@{/addbatch}">Add Batch</a>&nbsp;
+   <a th:href="@{/addstudent}">Add Student</a>&nbsp;
+   <a th:href="@{/viewstudentlist}">View Students</a>&nbsp;
+   <a th:href="@{/viewbatchlist}">View Batches</a>&nbsp;
+   <a th:href="@{/activebatches}">Active Batches</a>
+   <a th:href="@{/archivedbatches}">Archived Batches</a>
+   <a th:href="@{/logout}" style="float:right">Logout</a>
+   <a  style="float:right">	Hello <label Id="lblUserName" th:text="*{user}"></label></a>	
+</div>
+<div th:fragment="footer">
+<div align="center">
+     <span class="copyright">©2020 SUN'S SOFTWARE</span>
+</div>
+</div>
+</body>
+</html>
+

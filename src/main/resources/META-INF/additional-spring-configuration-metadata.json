@@ -1,0 +1,5 @@
+{"properties": [{
+  "name": "session.enable.url.with.session.id",
+  "type": "java.lang.String",
+  "description": "A description for 'session.enable.url.with.session.id'"
+}]}
